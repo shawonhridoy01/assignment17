@@ -1,7 +1,7 @@
 	<!-- Main navbar -->
 	<div class="navbar navbar-inverse">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+			<a class="navbar-brand" href="index.php"><img src="assets/images/logo_light.png" alt=""></a>
 
 			<ul class="nav navbar-nav visible-xs-block">
 				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
@@ -111,7 +111,7 @@
 						<ul class="media-list dropdown-content-body">
 							<li class="media">
 								<div class="media-left">
-									<img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+									<img src="../assets/images/shawon1.jpg" class="img-circle img-sm" alt="">
 									<span class="badge bg-danger-400 media-badge">5</span>
 								</div>
 
@@ -197,7 +197,7 @@
 						<li><a href="#"><span class="badge bg-teal-400 pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>
 						<li class="divider"></li>
 						<li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
-						<li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+						<li><a href="../login.php"><i class="icon-switch2"></i> Logout</a></li>
 					</ul>
 				</li>
 			</ul>

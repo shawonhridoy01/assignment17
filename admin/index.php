@@ -1,3 +1,23 @@
+<?php 
+session_start();
+
+include "./includes/config.php";
+if(basename(__DIR__)  != "admin" ){
+	$isInternal = true;
+	$baseUrl = "../";
+}else{
+	$isInternal = false;
+	$baseUrl = "";
+}
+
+if(!isset($_SESSION['last_name'])){
+	echo "you are logged out.Please login first"; 
+	header("location:./login.php");
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <html lang="en">
@@ -7,7 +27,7 @@
 <body>
 
 	<!-- Main navbar -->
-		<?php include "./includes/mainNav.php"; ?>
+	<?php include "./includes/mainNav.php" ?>
 	<!-- /main navbar -->
 
 
@@ -46,7 +66,7 @@
 					<!-- /user menu -->
 
 
-				<?php include "includes/navigations.php" ;?>
+				<?php include "./includes/navigations.php" ;?>
 
 				</div>
 			</div>
@@ -60,6 +80,12 @@
 					<div class="page-header">
 						<div class="page-header-content">
 							<div class="page-title">
+							<?php 
+								
+								 ;
+								echo "Welcome " .$_SESSION["last_name"]; 
+
+							?>
 								<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Home</span> - Dashboard</h4>
 							</div>
 
